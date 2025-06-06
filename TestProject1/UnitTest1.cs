@@ -20,5 +20,10 @@ namespace TestProject1
         {
             Assert.True(LeapYear.IsLeap(2004));
         }
+        [Fact]
+        public void YearNotDivisibleBy4_IsNotLeap()
+        {
+            Assert.False(LeapYear.IsLeap(2001));
+        }
     }
 }
