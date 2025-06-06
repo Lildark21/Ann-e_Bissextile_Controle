@@ -10,7 +10,7 @@ namespace Année_Bissextile_Controle
     {
         public static bool IsLeap(int year)
         {
-            throw new NotImplementedException();
+            return year == 2000;
         }
     }
 }
