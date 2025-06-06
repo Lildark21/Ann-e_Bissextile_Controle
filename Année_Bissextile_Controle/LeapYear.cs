@@ -11,7 +11,7 @@ namespace Année_Bissextile_Controle
         public static bool IsLeap(int year)
         {
             if (year % 400 == 0) return true;
-            if (year % 4 == 0) return true;
+            if (year % 100 == 0) return false;
             return false;
         }
     }
