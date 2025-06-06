@@ -6,9 +6,9 @@ namespace TestProject1
     public class UnitTest1
     {
         [Fact]
-        public void YearDivisibleBy400_IsLeap()
+        public void YearDivisibleBy100ButNot400_IsNotLeap()
         {
-            Assert.True(LeapYear.IsLeap(2000));
+            Assert.False(LeapYear.IsLeap(1900));
         }
     }
 }
